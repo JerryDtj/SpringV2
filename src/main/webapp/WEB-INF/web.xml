@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>DispatchServlet</servlet-name>
-        <servlet-class>com.dtj.spring.servlet.DispatchServlet</servlet-class>
+        <servlet-class>com.dtj.spring.formework.webmvc.servlet.DispatchServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:application.propertis</param-value>

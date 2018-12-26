@@ -2,10 +2,10 @@ package com.dtj.springMvc.controller;
 
 
 import com.dtj.springMvc.service.DemoService;
-import com.dtj.spring.annotation.Autowried;
-import com.dtj.spring.annotation.Controller;
-import com.dtj.spring.annotation.RequestMapping;
-import com.dtj.spring.annotation.RequestParam;
+import com.dtj.spring.formework.annotation.Autowried;
+import com.dtj.spring.formework.annotation.Controller;
+import com.dtj.spring.formework.annotation.RequestMapping;
+import com.dtj.spring.formework.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

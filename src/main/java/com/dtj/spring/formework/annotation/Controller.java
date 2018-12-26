@@ -1,12 +1,11 @@
-package com.dtj.spring.annotation;
+package com.dtj.spring.formework.annotation;
 
 import java.lang.annotation.*;
 
 
-@Target(ElementType.PARAMETER)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface RequestParam {
+public @interface Controller {
     String value() default "";
 }
-

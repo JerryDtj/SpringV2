@@ -2,7 +2,7 @@ package com.dtj.springMvc.service.impl;
 
 
 import com.dtj.springMvc.service.DemoService;
-import com.dtj.spring.annotation.Service;
+import com.dtj.spring.formework.annotation.Service;
 
 @Service
 public class DemoServiceImpl implements DemoService {

@@ -1,4 +1,4 @@
-package com.dtj.spring.annotation;
+package com.dtj.spring.formework.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
