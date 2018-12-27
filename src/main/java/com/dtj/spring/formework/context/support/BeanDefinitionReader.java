@@ -37,7 +37,16 @@ public class BeanDefinitionReader {
         doScanner(SCAN_PACKAGE);
     }
 
-    public BeanDefinition registerBean(String ClassName){
+    //每注册一个className，就返回一个BeanDefinition，我自己包装
+    //只是为了对配置信息进行一个包装
+    public BeanDefinition registerBean(String className){
+        if(this.registyBeanClasses.contains(className)){
+            BeanDefinition beanDefinition = new BeanDefinition();
+            beanDefinition.setBeanClassName(className);
+            beanDefinition.setFactoryBeanName(lowerFirstCase(className.substring(className.lastIndexOf(".") + 1)));
+            return beanDefinition;
+        }
+
         return null;
     }
 
@@ -64,7 +73,11 @@ public class BeanDefinitionReader {
                 registyBeanClasses.add(packageName + "." + file.getName().replace(".class",""));
             }
         }
+    }
 
-
+    private String lowerFirstCase(String str){
+        char [] chars = str.toCharArray();
+        chars[0] += 32;
+        return String.valueOf(chars);
     }
 }
